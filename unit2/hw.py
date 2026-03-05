@@ -14,8 +14,4 @@ print (x)
 num1 = input('insert a number: ')
 x = int(num1) * 2
 print (x) 
-##corrected code, converts the input string to an integer before multiplying by 2
-
-
-
- 
+##corrected code, converts the input string to an integer before multiplying by 2 
