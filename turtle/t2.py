@@ -1,0 +1,45 @@
+import turtle 
+t = turtle.Turtle()
+
+t = turtle.Turtle()
+t.speed(100)
+
+t.fillcolor("slate blue")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.penup()
+
+t.goto(0, 100)
+t.pendown()
+t.fillcolor("old lace")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.penup()
+
+t.goto(100,0)
+t.pendown()
+t.fillcolor("khaki")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.penup()
+
+t.goto(-100, 0)
+t.pendown()
+t.fillcolor("light pink")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.penup()
+
+t.goto(0, -100)
+t.pendown()
+t.fillcolor("light sea green")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+t.penup()
+
+turtle.done()
