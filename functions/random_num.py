@@ -2,7 +2,7 @@
 #checks how many odd and even numbers are generated and prints the count at the end.
 
 import random
-random.seed(42)
+random.seed(42)# allows each generation of the same sequenec of random numbers 
 odd_count = 0
 even_count = 0
 for x in range(100):
