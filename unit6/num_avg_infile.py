@@ -9,14 +9,20 @@ def num_file():
 def get_avg():
     total = 0
     count = 0
-    with open('AvgNum.txt', 'r') as infile:
-        for line in infile:
-            number = int(line)
-            print(f"Read {number} from the file.")
-            total += number
-            count += 1
-    average = total / count
-    print(f"The average is {average}.")
+    try: 
+        with open('AvgNum.txt', 'r') as infile: # 
+            for line in infile:
+                number = int(line)
+                print(f"Read {number} from the file.")
+                total += number
+                count += 1
+        average = total / count
+        print(f"The average is {average}.")
+
+    except FileNotFoundError:
+        print("The file AvgNum.txt was not found.")
+    except ValueError:
+        print("The file contains non-numeric data.")
 
 def main():
     num_file()
