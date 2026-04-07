@@ -19,7 +19,7 @@ def get_avg():
         average = total / count
         print(f"The average is {average}.")
 
-    except FileNotFoundError:
+    except IOError:
         print("The file AvgNum.txt was not found.")
     except ValueError:
         print("The file contains non-numeric data.")
