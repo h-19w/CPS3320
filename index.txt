@@ -1,0 +1,169 @@
+Word                 Lines
+---------------------------
+1,162                2
+1,820                3
+1840                 2
+1853                 4
+1867                 5
+2,000                8
+400-horsepower       2
+650-horsepower       3
+a                    2, 8, 9
+ability              7
+accident             10
+accordingly          9
+added                4
+after                4
+all                  4, 9
+and                  2, 3, 4, 5
+arabia               4
+as                   8, 9
+assets               3, 4
+astonished           10
+at                   3, 10
+atlantic             8
+be                   9, 10
+been                 4, 7
+between              2
+biggest              4
+burden               2
+business             7
+by                   3, 10
+can                  6, 9
+canceled             8
+charter              4
+china                4
+choose               9
+co                   4
+company              5, 6
+company's            3
+competition          9
+condensed            6
+conducted            7
+craft                8
+crossings            8
+crowned              7
+cunard               1, 4, 8, 9
+dealings             7
+delay                8
+despite              9
+details              6
+documents            9
+eastern              4
+eight                3, 5
+english              1
+even                 8
+ever                 4
+everyone             6
+famous               1
+featuring            2
+finest               10
+for                  6
+founded              2
+four                 3, 5
+france               9
+from                 9
+fully                6
+give                 6
+given                10
+great                4
+greater              3, 7
+had                  4
+halifax              2
+has                  7
+have                 7, 8
+highly               6
+i                    6
+if                   6
+importance           6
+in                   2, 3, 4, 5, 8, 9
+increased            3
+industrialist        2
+involving            10
+is                   1, 6
+it                   6
+its                  4, 6, 10
+java                 4
+just                 4
+known                6
+later                3
+letter               8
+line                 9
+liverpool            2
+lost                 8
+made                 8
+mail-carrying        4
+man                  8
+management           6
+maritime             6
+metric               2, 3
+more                 3, 7
+much                 8
+name                 1
+navigational         7
+no                   1, 7, 10
+of                   1, 2, 3, 4, 6, 9, 10
+official             9
+one                  1, 10
+or                   8
+other                3
+others               9
+over                 6
+owned                5
+paddle               2, 5
+passengers           9
+persia               4
+plow                 4
+postal               2
+power                3
+preference           9
+propellers           5
+provoked             10
+recent               9
+recorded             8
+renewed              4
+russia               4
+scotia               4
+seas                 4
+seen                 9
+service              2
+shipowner            1
+ships                2, 3, 4, 5, 8
+shrewd               2, 6
+so                   5, 6, 8
+speed                4
+steamers             10
+still                3, 9
+strong               9
+success              7
+successively         4
+survey               9
+that                 1
+the                  1, 3, 4, 6, 9, 10
+these                6
+this                 2, 5, 6, 10
+three                2
+to                   4, 9
+tonnage              3
+tons                 2, 3
+top                  4
+transoceanic         7
+transportation       6
+twelve               5
+twenty-six           8
+two                  3
+unaware              1
+understand           6
+undertaking          7
+uproar               10
+vessels              3
+voyage               8
+were                 3
+wheels               2, 5
+whose                4
+will                 10
+with                 2, 5, 7
+without              8
+wooden               2
+world                6
+years                3, 8
