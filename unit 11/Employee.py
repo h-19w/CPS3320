@@ -1,15 +1,18 @@
+
 class Employee:
-    def __init__(self, name, number):
-        self.name = name
-        self.number = number
-    def get_name(self):
-        return self.name
+    def __init__(self, name, id_number):
+        self.__name = name
+        self.__id_number = id_number
 
-    def get_number(self):
-        return self.number
-    
     def set_name(self, name):
-        self.name = name
+        self.__name = name
 
-    def set_number(self, number):
-        self.number = number
+    def set_id_number(self, id_number):
+        self.__id_number = id_number
+
+    def get_name(self):
+        return self.__name
+        
+    def get_id_number(self):
+        return self.__id_number
+        
