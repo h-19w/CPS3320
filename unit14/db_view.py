@@ -7,9 +7,12 @@ def main():
     # Get a cursor.
     cur = conn.cursor()
 
-    cur.execute('''SELECT * FROM Inventory''')
+    # cur.execute('''SELECT * FROM Inventory WHERE Price > 10''')
+    # cur.execute('''SELECT MAX(Price) FROM Inventory WHERE Price > 10''')
+    # cur.execute('''SELECT MIN(price) FROM Inventory WHERE Price > 10''')
+    # cur.execute('''SELECT SUM(Price) FROM Inventory WHERE Price > 10''')
+    cur.execute('''SELECT COUNT(*) FROM Inventory WHERE Price > 3''')
     rows = cur.fetchone()
-    print(rows, '\n')
     while rows is not None:
         print(rows)
         rows = cur.fetchone()   
