@@ -1,6 +1,5 @@
-# from Production_Worker import Production_Worker
+# problem 1
 from Production_Worker import Production_Worker
-
 
 def main():
     print("Enter the following employee data:")
@@ -9,7 +8,6 @@ def main():
     shift = int(input("Shift number (1 for day, 2 for night): "))
     pay_rate = float(input("Hourly pay rate: "))
     
-    # worker = Production_Worker(name, number, shift, pay_rate)
     worker = Production_Worker(name, number, shift, pay_rate)
     
     print("\nEmployee Information:")
