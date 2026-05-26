@@ -1,21 +1,18 @@
+# problem 5 
 import sqlite3
 
 def main():
-    # Connect to the database.
     conn = sqlite3.connect('students.db')
-
     cur = conn.cursor()
+
     add_majors_table(cur)
     add_departments_table(cur)
     add_students_table(cur)
 
-    add_majors(cur)
-    display_majors(cur)
-
-    add_departments(cur)
-    display_departments(cur)
-
     add_students(cur)
+
+    display_majors(cur)
+    display_departments(cur)
     display_students(cur)
 
     conn.commit()
@@ -32,7 +29,7 @@ def add_majors_table(cur):
               (5, 'Biology')]
     for major in majors:
         cur.execute('''INSERT INTO Majors (MajorID, MajorName)
-                       VALUES (?, ?)''', major) 
+                       VALUES (?, ?)''', major)
 
 def add_departments_table(cur):
     cur.execute('DROP TABLE IF EXISTS Departments')
@@ -54,36 +51,6 @@ def add_students_table(cur):
                                          FOREIGN KEY (MajorID) REFERENCES Majors(MajorID),
                                          FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID))''')
 
-
-def add_majors(cur):
-    majors = [(1, 'Computer Science'),
-              (2, 'Mathematics'),
-              (3, 'Physics'),
-              (4, 'Chemistry'),
-              (5, 'Biology')]
-    for major in majors:
-        cur.execute('''INSERT INTO Majors (MajorID, MajorName)
-                       VALUES (?, ?)''', major)
-def display_majors(cur):
-    cur.execute('SELECT * FROM Majors')
-    rows = cur.fetchall()
-    for row in rows:
-        print(f'MajorID: {row[0]}, MajorName: {row[1]}')
-
-def add_departments(cur):
-    departments = [(1, 'Engineering'),
-                   (2, 'Science'),
-                   (3, 'Arts')]
-    for dept in departments:
-        cur.execute('''INSERT INTO Departments (DepartmentID, DepartmentName)
-                       VALUES (?, ?)''', dept)
-def display_departments(cur):
-    cur.execute('SELECT * FROM Departments')
-    rows = cur.fetchall()
-    for row in rows:
-        print(f'DepartmentID: {row[0]}, DepartmentName: {row[1]}')
-
-
 def add_students(cur):
     students = [(1, 'Alice', 1, 1),
                 (2, 'Bob', 2, 2),
@@ -92,7 +59,20 @@ def add_students(cur):
                 (5, 'Eve', 5, 3)]
     for student in students:
         cur.execute('''INSERT INTO Students (StudentID, StudentName, MajorID, DepartmentID)
-                       VALUES (?, ?, ?, ?)''', student)       
+                       VALUES (?, ?, ?, ?)''', student)
+
+def display_majors(cur):
+    cur.execute('SELECT * FROM Majors')
+    rows = cur.fetchall()
+    for row in rows:
+        print(f'MajorID: {row[0]}, MajorName: {row[1]}')
+
+def display_departments(cur):
+    cur.execute('SELECT * FROM Departments')
+    rows = cur.fetchall()
+    for row in rows:
+        print(f'DepartmentID: {row[0]}, DepartmentName: {row[1]}')
+
 def display_students(cur):
     cur.execute('''SELECT s.StudentName, m.MajorName, d.DepartmentName
                    FROM Students s
@@ -102,6 +82,6 @@ def display_students(cur):
     for row in rows:
         print(f'Student: {row[0]}, Major: {row[1]}, Department: {row[2]}')
 
-# Execute the main function.
 if __name__ == '__main__':
     main()
+
